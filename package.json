@@ -4,5 +4,6 @@
 	"repo": "aperezdc/autocleanup",
 	"description": "Helpers to automatically cleanup scoped resources",
 	"keywords": [ "scoped", "automatic", "cleanup", "pointers", "handles" ],
-	"src": [ "autocleanup.h" ]
+	"src": [ "autocleanup.h" ],
+	"license": "MIT"
 }
