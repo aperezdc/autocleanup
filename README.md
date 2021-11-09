@@ -74,7 +74,7 @@ holds the pointer to `NULL`, and then return the pointer:
 
 ```c
 Person* person_create_myself (void) {
-    g_auto(Person) person = person_new ("Adrian Perez");
+    ptr_auto(Person) person = person_new ("Adrian Perez");
 
     person_customize_myself (person);
 
@@ -91,7 +91,7 @@ Thus, it can rewritten as:
 
 ```c
 Person* person_create_myself (void) {
-    g_auto(Person) person = person_new ("Adrian Perez");
+    ptr_auto(Person) person = person_new ("Adrian Perez");
 
     person_customize_myself (person);
 
