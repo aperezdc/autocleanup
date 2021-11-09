@@ -199,7 +199,7 @@ char* build_path (const char *progname) {
 }
 ```
 
-By default the function called for pointers marked with `ptr_auto` is the
+By default the function called for pointers marked with `ptr_autofree` is the
 `free()` function from the C library. This can be overriden by setting the
 `AUTOCLEANUP_FREE_FUNC` macro to the name of a different function at build
 time before including the header.
@@ -274,10 +274,10 @@ API
 ---
 
 Note that `T` below refers to any type valid in the context of the caller.
-The C language is not polymorphic, yet the implementation is typesafe due to
+The C language is not polymorphic, yet the implementation is type safe due to
 judicious usage of compiler extensions, preprocessor macros, and inline
 functions. Arguments to function-like macros are guaranteed to be evaluated
-only once and have no undersirable side-effects other than the documented
+only once and have no undesirable side-effects other than the documented
 behavior.
 
 
